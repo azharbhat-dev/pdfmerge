@@ -25,7 +25,7 @@ To run the app, you'll need:
 
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/your-username/pdf-resizer-merger.git](https://github.com/azharbhat-dev/pdfmerge.git)
+   git clone https://github.com/azharbhat-dev/pdfmerge.git
    cd pdfmerge
    ```
 
