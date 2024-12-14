@@ -1,3 +1,4 @@
 Flask
 fitz
+gunicorn
 PyMuPDF
