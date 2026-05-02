@@ -1,27 +1,28 @@
-# 📄 PDF Resizer and Merger Web App
+# PDF Resizer and Merger Web App
 
 A lightweight web application built with Flask for resizing and merging multiple PDF files. The app ensures all pages in the merged output are uniformly resized to fit standard A4 dimensions while maintaining the original content's aspect ratio.
 
-## ✨ Features
+## Features
 
-- **📤 Upload Multiple PDFs**: Easily upload multiple PDF files through the browser.
-- **📏 Uniform Page Sizing**: All pages are resized to standard A4 dimensions (595x842 points).
-- **🔗 PDF Merging**: Combines all uploaded files into a single, resized PDF.
-- **⬇️ Download Output**: Download the processed PDF directly after merging.
+- Upload Multiple PDFs: Easily upload multiple PDF files through the browser.
+- Uniform Page Sizing: All pages are resized to standard A4 dimensions (595x842 points).
+- PDF Merging: Combines all uploaded files into a single, resized PDF.
+- Download Output: Download the processed PDF directly after merging.
 
-## 🤔 Why This App?
+## Why This App?
 
 Merging PDFs often results in mismatched page sizes, making them difficult to view or print uniformly. This app addresses this issue by resizing each page to a standard size, ensuring consistency in the final output.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
 To run the app, you'll need:
-- **Python 3.7+**
-- **pip** (Python package manager)
 
-### 🛠 Installation
+- Python 3.7+
+- pip (Python package manager)
+
+### Installation
 
 1. Clone this repository:
    ```bash
@@ -35,7 +36,7 @@ To run the app, you'll need:
    ```
    Required packages include:
    - Flask
-   - PyMuPDF (`fitz`)
+   - PyMuPDF (fitz)
 
 3. Create the uploads folder:
    ```bash
@@ -52,14 +53,14 @@ To run the app, you'll need:
    http://127.0.0.1:5001/
    ```
 
-## 🖱️ Usage
+## Usage
 
 1. Open the web app in your browser.
 2. Upload one or more PDF files via the file selection form.
-3. Click **Upload and Merge** to process the PDFs.
+3. Click Upload and Merge to process the PDFs.
 4. Download the resized and merged PDF file.
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 pdf-resizer-merger/
@@ -70,30 +71,30 @@ pdf-resizer-merger/
 ├── uploads/              # Folder for uploaded and processed files
 ```
 
-## 🔧 Key Functions
+## Key Functions
 
 ### Resizing and Merging PDFs
 
-The core functionality is handled by the `resize_and_merge_pdfs` function in `app.py`. This function:
+The core functionality is handled by the resize_and_merge_pdfs function in app.py. This function:
 - Resizes all pages to A4 dimensions while preserving their aspect ratio.
 - Merges the resized pages into a single PDF.
 
-## 🛠️ Customization
+## Customization
 
-- **Target Page Size**: Modify the `target_size` parameter in `resize_and_merge_pdfs` to use custom dimensions.
-- **Port Number**: Change the port in `app.run(debug=True, port=5001)` to host on a different port.
+- Target Page Size: Modify the target_size parameter in resize_and_merge_pdfs to use custom dimensions.
+- Port Number: Change the port in app.run(debug=True, port=5001) to host on a different port.
 
-## 🤝 Contribution
+## Contribution
 
 Contributions and feedback are welcome! Feel free to:
 - Fork this repository
 - Submit issues
 - Propose new features via pull requests
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License. Use it freely for personal or commercial projects.
 
 ---
 
-**Happy PDF Resizing and Merging! 🎉**
+Happy PDF Resizing and Merging!
